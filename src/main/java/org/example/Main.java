@@ -40,6 +40,6 @@ public class Main {
         System.out.println(toDoList.isEmpty());
         System.out.println(toDoList.get(0));
         toDoList.addAll(lista);
-        System.out.println(toDoList.getToDoList());
+        System.out.println(toDoList.stream().filter(obj -> !obj.getIsCompleted()).count());
     }
 }
